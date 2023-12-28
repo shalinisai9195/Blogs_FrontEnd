@@ -38,6 +38,8 @@ const UpdatePost = () => {
 
   const handleSubmit = async () => {
     console.log(blog);
+    //http://localhost:4000
+    //
     const res = await fetch("https://myblogs-pnix.onrender.com/api/blog/update/"+id, {
       method: "PUT",
       headers: {

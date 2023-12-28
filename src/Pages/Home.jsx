@@ -1,5 +1,5 @@
 import React from 'react'
-import DisplayPost from '../components/DisplayPost'
+import DisplayPost from '../Components/DisplayPost'
 
 const Home = () => {
   return (
