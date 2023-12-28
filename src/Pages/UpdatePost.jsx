@@ -11,7 +11,7 @@ const UpdatePost = () => {
 
   useEffect(()=>{
     const fetchSingleBlog = async () => {
-      const res = await fetch(`http://localhost:4000/api/blog/${id}`, {
+      const res = await fetch(`https://myblogs-pnix.onrender.com/api/blog/${id}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -38,7 +38,7 @@ const UpdatePost = () => {
 
   const handleSubmit = async () => {
     console.log(blog);
-    const res = await fetch("http://localhost:4000/api/blog/update/"+id, {
+    const res = await fetch("https://myblogs-pnix.onrender.com/api/blog/update/"+id, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

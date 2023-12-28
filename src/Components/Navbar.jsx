@@ -22,7 +22,7 @@ const Navbar = () => {
   const isNonMobileDevice = useMediaQuery("(min-width: 1000px)")
 
   const fetchUser = async () => {
-    const res = await fetch("http://localhost:4000/api/user/auth", {
+    const res = await fetch("https://myblogs-pnix.onrender.com/api/user/auth", {
       method: "GET",
       headers: {
         token: localStorage.getItem("token")

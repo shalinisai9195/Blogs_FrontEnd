@@ -16,7 +16,7 @@ const Login = () => {
 
   const handleSubmit = async () => {
     console.log(user);
-    const res = await fetch("http://localhost:4000/api/user/login", {
+    const res = await fetch("https://myblogs-pnix.onrender.com/api/user/login", {
       method: "POST",
       headers:{
         "Content-Type": "application/json"

@@ -5,7 +5,7 @@ import PostCard from './PostCard';
 function DisplayPost() {
   const [posts, setPosts] = useState([])
   const fetchData = async () => {
-    const res = await fetch("http://localhost:4000/api/blog/allblogs", {
+    const res = await fetch("https://myblogs-pnix.onrender.com/api/blog/allblogs", {
         method: "GET",
         headers: {
             token: localStorage.getItem("token")
